@@ -10,3 +10,12 @@ function factorial(num) {
     return factorial;
 }
 console.log(factorial(-7));
+
+// recursion solution
+function factorialize(num) {
+    if (num === 0) {
+        return 1;
+    }
+    return num *factorialize(num - 1);
+}
+console.log(factorialize(4));
